@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.abhishek.parkitapp.Maps">
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:id="@+id/map_fragment"
+            android:name="com.google.android.gms.maps.MapFragment">
+        </fragment>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="@color/bg_grey">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_formattop"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"
+                    android:text="Parking Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Parking Address"
+                    android:layout_marginBottom="8dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:background="#323232"
+                    android:paddingTop="5dp"
+                    android:orientation="horizontal">
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_height="1dip"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="57dp"
+                        android:background="@color/white" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:text=" Parking tarrif "/>
+                    <View
+                        android:layout_width="70dp"
+                        android:layout_gravity="center"
+                        android:layout_height="1dip"
+                        android:background="@color/white" />
+                </LinearLayout>
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="3dp"
+                    android:background="#323232"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="0dp"
+                        android:layout_weight=".5"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="2 Wheeler" />
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="0dp"
+                        android:layout_weight=".5"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:text="4 Wheeler" />
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:paddingBottom="7dp"
+                    android:orientation="horizontal"
+                    android:background="#323232">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Rs. 20/hr"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:text="Rs. 40/hr"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/v_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#4e4c4c"
+                    android:hint="Enter Vehicle Number"
+                    android:padding="3dp"
+                    android:inputType="textCapCharacters"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/location_formatbottom"
+                android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight=".6"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Reservation charges"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:layout_weight=".4"
+                    android:text="Rs. 10"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/reserve"
+                android:text="RESERVE A SPACE"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>
