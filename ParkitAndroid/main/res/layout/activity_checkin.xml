@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFD026"
+        android:id="@+id/check_in_tv"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Select Check In Date"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:calendarViewShown="false"
+        android:soundEffectsEnabled="true"
+        android:datePickerMode="spinner"
+        android:calendarTextColor="#000000"
+        android:spinnersShown="true"
+        android:headerDayOfMonthTextAppearance="@color/black"
+        android:headerMonthTextAppearance="@color/black"
+        android:headerYearTextAppearance="@color/black"
+        android:id="@+id/check_in_dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="Select Check In Time"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/timelimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#FF0000"
+        android:textSize="15dp"
+        android:textStyle="normal" />
+    <TimePicker
+        android:id="@+id/check_in_tp"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:timePickerMode="spinner"
+        android:soundEffectsEnabled="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:headerTimeTextAppearance="@color/black"
+        android:headerAmPmTextAppearance="@color/black" />
+
+    <Button
+        android:id="@+id/buttonTime"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/login_button_black"
+        android:text="CONTINUE"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center" />
+</LinearLayout>
